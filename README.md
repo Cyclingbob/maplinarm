@@ -21,10 +21,10 @@ Assumes you have not already installed from peterlavelle/maplinarm
 
 If you have installed it already, only run the first, second and last bullet point steps.
 
-- Install this repository by cloning it: <strong>git clone https://github.com/Cyclingbob/maplinarm maplinarm2</strong>
-- change directory to this new folder: <strong>cd maplinarm2</strong>
+- Install this repository by cloning it: <pre>git clone https://github.com/Cyclingbob/maplinarm maplinarm2</pre>
+- change directory to this new folder: <pre>cd maplinarm2</pre>
 
-- Create a new udev rules file at <strong>/etc/udev/rules.d/85-robotarm.rules</strong> with the contents
+- Create a new udev rules file at <pre>/etc/udev/rules.d/85-robotarm.rules</pre> with the contents
 <pre>
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1267", ATTRS{idProduct}=="0000", ACTION=="add", GROUP="plugdev", MODE="0666"
 </pre>
@@ -34,7 +34,7 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1267", ATTRS{idProduct}=="0000", ACTION=="ad
 - Install pip with the command: <pre>sudo apt-get install python-pip -y</pre>
 - Install pyusb Library via pip with the command: <pre>sudo pip install pyusb</pre>
 - Open the scripts and edit it to suit your needs (See Example Usage section for more info.)
-- type <strong> python3 main.py </strong> to run. If you have problems running as a normal user, try running the script as root.
+- type <pre> python3 main.py </pre> to run. If you have problems running as a normal user, try running the script as root.
 
 Moving the Arm
 ==============
@@ -70,7 +70,7 @@ my_arm.moveBaseAntiClockwise(1)
 </pre>
 
 This will rotate the base of the arm clockwise for 1 second. Duration of each command is set by passing a float value 
-to the <strong>time</strong> parameter.
+to the <pre>time</pre> parameter.
 
 <pre>python3 main.py</pre>
 
