@@ -61,7 +61,7 @@ The argument is the amount of time the script should wait from sending this inst
 Example Usage
 =============
 
-Find this code in <pre>main.py</pre>
+Find this code in `main.py`
 
 <pre>
 from maplinrobot import Robot
@@ -70,8 +70,8 @@ my_arm.moveBaseAntiClockwise(1)
 </pre>
 
 This will rotate the base of the arm clockwise for 1 second. Duration of each command is set by passing a float value 
-to the <pre>time</pre> parameter.
+to the `time` parameter.
 
 <pre>python3 main.py</pre>
 
-The program may print out lots of debug output, this is due to print statements in <pre>maplinrobot.py</pre>.
+The program may print out lots of debug output, this is due to print statements in <pre>maplinrobot.py</pre>
