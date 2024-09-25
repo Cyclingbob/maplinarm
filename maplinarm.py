@@ -16,7 +16,7 @@ class Robot():
         self._robot = MaplinRobot()
     
     def moveBaseAntiClockwise(self, time=1):
-        return self._robot.MoveArm(time=1, "base-anti-clockwise")
+        return self._robot.MoveArm(time, "base-anti-clockwise")
 
     def moveBaseClockwise(self, time=1):
         return self._robot.MoveArm(time, "base-clockwise")
