@@ -43,19 +43,19 @@ Valid commands to send to the arm are:
 
 The argument is the amount of time the script should wait from sending this instruction until continuing with the rest of the script.
 
-- 'robot.moveBaseAntiClockwise(1)' - Rotates the base anti-clockwise
-- 'robot.moveBaseClockwise(1)' - Rotates the base clockwise
-- 'robot.shoulderUp(1) - Raises the shoulder
-- 'robot.shoulderDown(1)' - Lowers the shoulder
-- 'robot.elbowUp(1)' - Raises the elbow
-- 'robot.elbowDown(1)' - Lowers the elbow
-- 'robot.wristUp(1)' - Raises the wrist
-- 'robot.wristDown(1)' - Lowers the wrist
-- 'robot.gripOpen(1)' - Opens the grip
-- 'robot.gripClose(1)' - Closes the grip
-- 'robot.lightOn(1)' - Turns on the LED in the grip
-- 'robot.lightOff(1)' - Turns the LED in the grip off
-- 'robot.stop(1)' - Stops all movement of the arm
+- 'robot.moveBaseAntiClockwise()' - Rotates the base anti-clockwise
+- 'robot.moveBaseClockwise()' - Rotates the base clockwise
+- 'robot.shoulderUp() - Raises the shoulder
+- 'robot.shoulderDown()' - Lowers the shoulder
+- 'robot.elbowUp()' - Raises the elbow
+- 'robot.elbowDown()' - Lowers the elbow
+- 'robot.wristUp()' - Raises the wrist
+- 'robot.wristDown()' - Lowers the wrist
+- 'robot.gripOpen()' - Opens the grip
+- 'robot.gripClose()' - Closes the grip
+- 'robot.lightOn()' - Turns on the LED in the grip
+- 'robot.lightOff()' - Turns the LED in the grip off
+- 'robot.stop()' - Stops all movement of the arm
 - 'robot.reconnect()' - Can be called if the USB connection fails.
 
 Example Usage
@@ -66,11 +66,11 @@ Find this code in `main.py`
 <pre>
 from maplinrobot import Robot
 my_arm = Robot()
-my_arm.moveBaseAntiClockwise(1)
+my_arm.moveBaseAntiClockwise()
 </pre>
 
 This will rotate the base of the arm clockwise for 1 second. Duration of each command is set by passing a float value 
-to the `time` parameter.
+to the `time` parameter like so: `my_arm.moveBaseAntiClockwise(2)`, for 2 seconds.
 
 <pre>python3 main.py</pre>
 

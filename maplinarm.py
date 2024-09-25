@@ -15,41 +15,41 @@ class Robot():
     def reconnect(self):
         self._robot = MaplinRobot()
     
-    def moveBaseAntiClockwise(self, time):
-        return self._robot.MoveArm(time, "base-anti-clockwise")
+    def moveBaseAntiClockwise(self, time=1):
+        return self._robot.MoveArm(time=1, "base-anti-clockwise")
 
-    def moveBaseClockwise(self, time):
+    def moveBaseClockwise(self, time=1):
         return self._robot.MoveArm(time, "base-clockwise")
 
-    def shoulderUp(self, time):
+    def shoulderUp(self, time=1):
         return self._robot.MoveArm(time, "shoulder-up")
 
-    def shoulderDown(self, time):
+    def shoulderDown(self, time=1):
         return self._robot.MoveArm(time, "shoulder-down")
     
-    def elbowUp(self, time):
+    def elbowUp(self, time=1):
         return self._robot.MoveArm(time, "elbow-up")
 
-    def elbowDown(self, time):
+    def elbowDown(self, time=1):
         return self._robot.MoveArm(time, "elbow-down")
 
-    def wristUp(self, time):
+    def wristUp(self, time=1):
         return self._robot.MoveArm(time, "wrist-up")
 
-    def wristDown(self, time):
+    def wristDown(self, time=1):
         return self._robot.MoveArm(time, "wrist-down")
 
-    def gripOpen(self, time):
+    def gripOpen(self, time=1):
         return self._robot.MoveArm(time, "grip-open")
 
-    def gripClose(self, time):
+    def gripClose(self, time=1):
         return self._robot.MoveArm(time, "grip-close")
 
-    def lightOn(self, time):
+    def lightOn(self, time=1):
         return self._robot.MoveArm(time, "light-on")
 
-    def lightOff(self, time):
+    def lightOff(self, time=1):
         return self._robot.MoveArm(time, "light-off")
 
-    def stop(self, time):
+    def stop(self, time=1):
         return self._robot.MoveArm(time, "stop")
